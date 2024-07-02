@@ -1,4 +1,4 @@
-%% 1. Finding differences in firing rates across attented and unattended stimulus conditions.
+%% 1. Finding differences in spike counts across attented and unattended stimulus conditions.
 % load data
 load('fr_all.m')
 num_cells=size(fr_all,2);
@@ -7,7 +7,7 @@ num_cells=size(fr_all,2);
 % 2 - channels
 % 3 - time (the stimulus onset is at 250 points).
 
-% plot averaged firing rates for attended and unattended conditions.
+% plot averaged spike counts for attended and unattended conditions.
 fig = figure;
 plot(); 
 hold on
@@ -31,7 +31,7 @@ max()
 
 
 
-%% 2. testing if the strength of firing rates in two conditions are correlated. 
+%% 2. testing if the strength of spike counts in two conditions are correlated. 
 fig = figure(2);
 %[h,p] = corr(sample1, sample2, 'rows', 'pairwise')
 %scatter(sample1, sampole2, 'filled', 'm');
